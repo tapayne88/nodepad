@@ -10,7 +10,7 @@ var express = require('express')
     , path = require('path');
 
 var mongoose = require('mongoose');
-var db = mongoose.connect('mongodb://localhost:28017/notepad');
+var db = mongoose.connect('mongodb://localhost/notepad');
 var Document = require('./models').Document(db);
 
 var app = express();
